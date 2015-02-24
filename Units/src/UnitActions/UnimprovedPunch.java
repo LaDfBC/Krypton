@@ -9,4 +9,8 @@ public class UnimprovedPunch extends OffensivePunch {
     public long getRange() {
         return 1L;
     }
+
+    public static void main(String[] args) {
+        System.out.println((byte)-129);
+    }
 }
