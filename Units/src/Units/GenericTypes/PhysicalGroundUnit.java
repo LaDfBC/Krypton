@@ -5,7 +5,7 @@ package Units.GenericTypes;
  *
  * Represents a unit that attacks from the ground with a purely physical weapon.
  */
-public abstract class PhysicalGroundUnit implements Unit {
+public abstract class PhysicalGroundUnit extends Unit {
     protected long physicalAttack;
 
     public abstract long getPhysicalAttack();

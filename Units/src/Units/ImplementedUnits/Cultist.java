@@ -10,14 +10,28 @@ import Units.GenericTypes.Zone;
  */
 public class Cultist extends PhysicalGroundUnit {
     private long health;
-    @Override
+
     public long getHealth() {
         return 2;
     }
 
-    @Override
     public void setHealth(long health) {
         this.health = health;
+    }
+
+    @Override
+    public long getTotalHealth() {
+        return 0;
+    }
+
+    @Override
+    public void setTotalHealth(long totalHealth) {
+
+    }
+
+    @Override
+    public void getCurrentHealth() {
+
     }
 
     @Override
@@ -42,6 +56,16 @@ public class Cultist extends PhysicalGroundUnit {
 
     @Override
     public void setZoneOfExistence(Zone zoneOfExistence) {
+
+    }
+
+    @Override
+    public long getMovementDistance() {
+        return 1;
+    }
+
+    @Override
+    public void setMovementDistance(long distance) {
 
     }
 
