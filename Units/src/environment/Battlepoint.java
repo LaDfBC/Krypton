@@ -12,10 +12,18 @@ import java.util.List;
  */
 public class Battlepoint {
     private Space[][] field;
+    private int fieldHeight;
+    private int fieldWidth;
 
     public Battlepoint(int height, int width) {
+        fieldHeight = height;
+        fieldWidth = width;
         field = new Space[height][width];
-        //TODO: Fully initialize with blank spaces
+        for(int movingHeight = 0; movingHeight < height; movingHeight++) {
+            for(int movingWidth = 0; movingWidth < width; movingWidth++) {
+                field[movingHeight][movingWidth] = new Space.SpaceBuilder().setCanOccupy(true).setTravelCost(1).build();
+            }
+        }
     }
 
     public Space getSpace(int height, int width) {
@@ -39,5 +47,28 @@ public class Battlepoint {
             unit.setCurrentPosition(newPosition);
             return true;
         }
+    }
+
+    @Override
+    public String toString() {
+        if(fieldHeight == 0 || fieldWidth == 0) {
+           return "++\n++";
+        }
+        StringBuilder builder = new StringBuilder();
+        builder.append("+");
+        for(int movingHeight = 0; movingHeight < fieldHeight; movingHeight++) {
+            for (int movingWidth = 0; movingWidth < fieldWidth; movingWidth++) {
+                builder.append("-+");
+            }
+            builder.append("\n");
+            for (int movingWidth = 0; movingWidth < fieldWidth; movingWidth++) {
+                builder.append("| ");
+            }
+            builder.append("|\n+");
+        }
+        for(int movingHeight = 0; movingHeight < fieldWidth; movingHeight++) {
+            builder.append("-+");
+        }
+        return builder.toString();
     }
 }
