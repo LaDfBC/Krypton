@@ -1,6 +1,8 @@
-package environment;
+package environment.main;
 
 import Units.GenericTypes.Unit;
+import Units.UnitActions.Action;
+import Units.UnitActions.Enum.ActionType;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -47,5 +49,30 @@ public class Space {
 
     public List<Unit> getGroundState() {
         return groundState;
+    }
+
+    public void unitActedUpon(Unit unit, Action action) {
+        if(action.getActionType() == ActionType.OFFENSIVE) {
+            Long health = groundState.get(0).takeDamage(action.getActionMagnitude());
+            //TODO: eww.  Make state easier to control.  Run through a database?
+            groundState.remove(0);
+            unit.setCurrentHealth(health);
+            groundState.add(unit);
+            //Todo: Find and identify the proper unit
+//            Long health = unit.takeDamage(action.getActionMagnitude());
+            if(health == 0) {
+                groundState.remove(0);
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        for(Unit unit : groundState) {
+            builder.append(unit);
+            builder.append("\n");
+        }
+        return builder.toString();
     }
 }

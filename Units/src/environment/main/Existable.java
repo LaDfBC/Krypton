@@ -1,4 +1,4 @@
-package environment;
+package environment.main;
 
 /**
  * Created on 2/27/2015.

@@ -1,9 +1,7 @@
-package environment;
+package environment.main;
 
 import Units.GenericTypes.Unit;
 import common.Coordinates;
-
-import java.util.List;
 
 /**
  * Created by George on 2/23/2015.
@@ -62,7 +60,8 @@ public class Battlepoint {
             }
             builder.append("\n");
             for (int movingWidth = 0; movingWidth < fieldWidth; movingWidth++) {
-                builder.append("| ");
+                builder.append("|");
+                builder.append(" "); //Todo: List real state
             }
             builder.append("|\n+");
         }
