@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+task helloWord {
+    doLast{
+        println 'Hello World!'
+    }
+}
