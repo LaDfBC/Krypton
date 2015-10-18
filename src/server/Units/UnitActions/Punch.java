@@ -1,6 +1,6 @@
-package Units.UnitActions;
+package server.Units.UnitActions;
 
-import Units.UnitActions.Enum.ActionType;
+import server.Units.UnitActions.Enum.ActionType;
 
 /**
  * Created by George on 12/7/2014

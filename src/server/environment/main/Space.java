@@ -1,8 +1,8 @@
-package environment.main;
+package server.environment.main;
 
-import Units.GenericTypes.Unit;
-import Units.UnitActions.Action;
-import Units.UnitActions.Enum.ActionType;
+import server.Units.GenericTypes.Unit;
+import server.Units.UnitActions.Action;
+import server.Units.UnitActions.Enum.ActionType;
 
 import java.util.*;
 

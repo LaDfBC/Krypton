@@ -1,7 +1,6 @@
-package common;
+package server.common;
 
-import Units.GenericTypes.Unit;
-import com.sun.xml.internal.ws.util.xml.NodeListIterator;
+import server.Units.GenericTypes.Unit;
 
 import java.util.*;
 

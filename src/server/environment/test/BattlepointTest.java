@@ -1,15 +1,15 @@
-package environment.test;
+package server.environment.test;
 
-import Units.ImplementedUnits.Cultist;
-import Units.UnitActions.OffensivePunch;
-import environment.main.Battlepoint;
+import server.Units.ImplementedUnits.Cultist;
+import server.Units.UnitActions.OffensivePunch;
+import server.environment.main.Battlepoint;
 import org.junit.Test;
 
 /**
  * Created by George on 2/27/2015
  */
 
-public class BattlepointTest {
+public class GridTest {
     @Test
     public void testNewBattlepointIsEmpty() {
         Battlepoint battlepoint = new Battlepoint(1, 1);

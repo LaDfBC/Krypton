@@ -1,4 +1,4 @@
-package Units.GenericTypes;
+package server.Units.GenericTypes;
 
 /**
  * Created by George on 12/7/2014.

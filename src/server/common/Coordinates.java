@@ -1,4 +1,4 @@
-package common;
+package server.common;
 
 public class Coordinates {
     private long x;

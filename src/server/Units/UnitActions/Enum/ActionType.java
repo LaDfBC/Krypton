@@ -1,4 +1,4 @@
-package Units.UnitActions.Enum;
+package server.Units.UnitActions.Enum;
 
 /**
  * Created by George on 12/7/2014.

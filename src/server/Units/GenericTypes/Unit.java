@@ -1,7 +1,7 @@
-package Units.GenericTypes;
+package server.Units.GenericTypes;
 
 import com.sun.javafx.beans.annotations.NonNull;
-import common.Coordinates;
+import server.common.Coordinates;
 
 import java.util.UUID;
 

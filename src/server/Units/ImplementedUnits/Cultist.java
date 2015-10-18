@@ -1,7 +1,7 @@
-package Units.ImplementedUnits;
+package server.Units.ImplementedUnits;
 
-import Units.GenericTypes.PhysicalGroundUnit;
-import Units.GenericTypes.Zone;
+import server.Units.GenericTypes.PhysicalGroundUnit;
+import server.Units.GenericTypes.Zone;
 
 /**
  * Created by George on 12/7/2014.
